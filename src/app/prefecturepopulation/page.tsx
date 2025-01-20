@@ -7,7 +7,7 @@ type Data = {
     result: Prefecture[];
 }
 import styles from './page.module.css';
-// import MyChart from '@/components/Chart';
+import Chart from '../components/Chart';
 
 export default async function page(){
     const endpoint = 'https://yumemi-frontend-engineer-codecheck-api.vercel.app/api/v1/prefectures';
@@ -52,7 +52,7 @@ export default async function page(){
             </ul>
         </div>
         <div>
-        {/* <MyChart /> */}
+        <Chart />
         </div>
         <div>
             <button type="submit">利用開始</button>
